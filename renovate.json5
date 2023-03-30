@@ -13,7 +13,7 @@
         "^Dockerfile$"
       ],
       "matchStrings": [
-        "(?<depName>\\S+)@(?<currentVersion>\\S+)"
+        "(?<depName>\\S+)@(?<currentValue>\\S+)"
       ],
       "datasourceTemplate": "crate"
     }
