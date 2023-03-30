@@ -14,5 +14,7 @@
       ],
       "datasourceTemplate": "crate"
     }
-  ]
+  ],
+  "prHourlyLimit": 0,
+  "prCreation": "immediate",
 }
