@@ -8,12 +8,12 @@ RUN export ARCH=$(case $TARGETARCH in "arm64") echo "aarch64";; *) echo "x86_64"
     export CARGO_BUILD_TARGET=$ARCH-unknown-linux-gnu && \
     rustup target add $CARGO_BUILD_TARGET
 RUN cargo install --locked \
-    mdbook-toc@^0.11.0 \
-    mdbook-mermaid@^0.12.6 \
-    mdbook-admonish@^1.8.0  \
-    mdbook-linkcheck@^0.7.0  \
-    mdbook-pdf@^0.1.5  \
-    mdbook@^0.4.25
+    mdbook-toc@0.11.0 \
+    mdbook-mermaid@0.12.6 \
+    mdbook-admonish@1.8.0  \
+    mdbook-linkcheck@0.6.0  \
+    mdbook-pdf@0.1.5  \
+    mdbook@0.4.25
 
 FROM gcr.io/distroless/cc
 COPY --from=builder --link /usr/local/cargo/bin/mdbook* /usr/bin/
