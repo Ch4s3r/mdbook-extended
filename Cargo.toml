@@ -9,4 +9,4 @@ anyhow = "1.0.45"
 mdbook-linkcheck = "0.6.0"
 
 [build-dependencies]
-tonic-build = "0.6.0"
+tonic-build = "0.8.4"
