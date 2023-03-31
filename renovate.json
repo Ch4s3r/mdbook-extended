@@ -18,7 +18,11 @@
   "packageRules": [
     {
       "description": "Enable all update types updates for all dependencies",
-      "matchUpdateTypes": ["major", "minor", "patch"],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ],
       "enabled": true
     }
   ],
