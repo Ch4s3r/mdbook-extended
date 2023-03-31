@@ -11,7 +11,7 @@ RUN cargo install --locked \
     mdbook-toc@0.11.0 \
     mdbook-mermaid@0.12.6 \
     mdbook-admonish@1.8.0  \
-    mdbook-linkcheck@0.7.0  \
+    mdbook-linkcheck@0.6.0  \
     mdbook-pdf@0.1.5  \
     mdbook@0.4.25
 
