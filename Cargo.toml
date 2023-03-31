@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-tracing-subscriber = "0.3.1"
+tracing-subscriber = "0.3.16"
 anyhow = "1.0.45"
 mdbook-linkcheck = "0.6.0"
 
