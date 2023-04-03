@@ -1,0 +1,56 @@
+# working
+{
+  "depName": "mdbook-linkcheck",
+  "depType": "dependencies",
+  "currentValue": "0.6.0",
+  "managerData": {
+    "nestedVersion": false
+  },
+  "datasource": "crate",
+  "updates": [
+    {
+      "bucket": "non-major",
+      "newVersion": "0.7.7",
+      "newValue": "0.7.7",
+      "newMajor": 0,
+      "newMinor": 7,
+      "updateType": "minor",
+      "branchName": "renovate/mdbook-linkcheck-0.x"
+    }
+  ],
+  "packageName": "mdbook-linkcheck",
+  "warnings": [],
+  "versioning": "cargo",
+  "sourceUrl": "https://github.com/Michael-F-Bryan/mdbook-linkcheck",
+  "registryUrl": "https://crates.io",
+  "dependencyUrl": "https://crates.io/crates/mdbook-linkcheck",
+  "currentVersion": "0.6.0",
+  "isSingleVersion": false
+}
+
+# non working
+{
+  "depName": "mdbook-linkcheck",
+  "currentValue": "0.6.0",
+  "datasource": "crate",
+  "replaceString": "mdbook-linkcheck@0.6.0",
+  "updates": [
+    {
+      "bucket": "non-major",
+      "newVersion": "0.7.7",
+      "newValue": "0.7.0",
+      "newMajor": 0,
+      "newMinor": 7,
+      "updateType": "minor",
+      "branchName": "renovate/mdbook-linkcheck-0.x"
+    }
+  ],
+  "packageName": "mdbook-linkcheck",
+  "warnings": [],
+  "versioning": "cargo",
+  "sourceUrl": "https://github.com/Michael-F-Bryan/mdbook-linkcheck",
+  "registryUrl": "https://crates.io",
+  "dependencyUrl": "https://crates.io/crates/mdbook-linkcheck",
+  "currentVersion": "0.6.0",
+  "isSingleVersion": false
+},
