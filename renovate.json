@@ -1,8 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
   "regexManagers": [
     {
       "description": "Update cargo install versions in Dockerfile",
@@ -15,17 +12,5 @@
       "datasourceTemplate": "crate"
     }
   ],
-  "packageRules": [
-    {
-      "description": "Enable all update types updates for all dependencies",
-      "matchUpdateTypes": [
-        "major",
-        "minor",
-        "patch"
-      ],
-      "enabled": true
-    }
-  ],
-  "prHourlyLimit": 0,
-  "prCreation": "immediate"
+  "prHourlyLimit": 0
 }
