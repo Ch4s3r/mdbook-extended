@@ -9,29 +9,24 @@ RUN export ARCH=$(case $TARGETARCH in "arm64") echo "aarch64";; *) echo "x86_64"
     export CARGO_BUILD_TARGET=$ARCH-unknown-linux-gnu && \
     rustup target add $CARGO_BUILD_TARGET
 RUN cargo install --locked \
-    mdbook-toc@0.11.0 \
-    mdbook-mermaid@0.12.6 \
-    mdbook-admonish@1.8.0  \
-    mdbook-linkcheck@0.6.0  \
-    mdbook-pdf@0.1.5  \
     mdbook@0.4.25
 # Do you want a .gitignore to be created? (y/n)
 # What title would you like to give the book?
-RUN echo \n\n | mdbook init
-RUN mdbook-mermaid install
-RUN mdbook-admonish install
+# RUN echo \n\n | mdbook init
+# RUN mdbook-mermaid install
+# RUN mdbook-admonish install
 
-FROM gcr.io/distroless/cc as runner
-WORKDIR /app
-COPY --from=builder --link /usr/local/cargo/bin/mdbook* /usr/bin/
+# FROM gcr.io/distroless/cc as runner
+# WORKDIR /app
+# COPY --from=builder --link /usr/local/cargo/bin/mdbook* /usr/bin/
 
-CMD ["mdbook", "--help"]
+# CMD ["mdbook", "--help"]
 
-FROM runner AS builder1
-WORKDIR /app
-COPY test_book .
-RUN ["mdbook", "build"]
+# FROM runner AS builder1
+# WORKDIR /app
+# COPY test_book .
+# RUN ["mdbook", "build"]
 
-FROM nginx:alpine AS webserver
-COPY --from=builder1 /app/book/html /usr/share/nginx/html
-EXPOSE 80
+# FROM nginx:alpine AS webserver
+# COPY --from=builder1 /app/book/html /usr/share/nginx/html
+# EXPOSE 80
